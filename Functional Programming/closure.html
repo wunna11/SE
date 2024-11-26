@@ -1,0 +1,23 @@
+<html>
+  <script>
+    // clousre => close over , encapsulation power, state handling
+    function Stack() {
+      let items = [];
+
+      function push(element) {
+        items.push(element);
+      }
+
+      function pop() {
+        return items.pop();
+      }
+
+      return { push, pop };
+    }
+
+    let stack1 = Stack();
+    stack1.push("one");
+    stack1.push("two");
+    console.log("stack1", stack1.pop());
+  </script>
+</html>

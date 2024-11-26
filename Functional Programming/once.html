@@ -1,0 +1,42 @@
+<html>
+  <script>
+    // with using imperative method
+    let done = false;
+    function payment() {
+      if (!done) {
+        console.log('payment');
+        done = true;
+      }
+    }
+
+    // payment();
+    // payment();
+
+    function linkage() {
+      console.log('linkage');
+    }
+
+    linkage();
+    linkage();
+
+    // with using fp
+
+    function once(fn) {
+      let done = false;
+      return !done ? ((done = ture), fn()) : undefined;
+      // return function () {
+      //   if (!done) {
+      //     fn();
+      //     done = true;
+      //   }
+      // };
+    }
+
+    payment = once(payment);
+    payment = once(payment);
+    console.log(once(payment));
+
+    payment();
+    payment();
+  </script>
+</html>

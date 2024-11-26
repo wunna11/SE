@@ -1,0 +1,29 @@
+<html>
+  <script>
+    function business1 () 
+    {
+      console.log('business1')
+    }
+
+    function business2()
+    {
+      console.log('business2')
+    }
+
+    function logger(func)
+    {
+      return function() 
+      {
+        console.log('Before', func.name, 'called')
+        func()
+        console.log('After', func.name, 'called')
+      }
+    }
+
+    let fun1 = logger(business1)
+    let fun2 = logger(business2)
+
+    fun1()
+    fun2()
+  </script>
+</html>

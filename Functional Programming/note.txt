@@ -1,0 +1,43 @@
+imperative
+if / for
+mutable
+side effect
+
+pure function
+- same input , same output
+
+fp
+function -> map
+immutable
+no side effect
+
+fp principle -> pure function, referential transparency
+fp concept -> few data structure, many operator
+imperative concept -> control flow
+
+referential trapsparency -> same input same output -> အစားထိုးလို့ရ
+
+concunrrency problem -> state
+
+reactive programming use functional progrmamming
+
+First Class function
+- can assign function into variable
+- can funtion as parameter
+- return function to function
+
+Higher Order Function(HOF)
+- function input or
+- return function
+
+why use HOF ?
+- 
+
+Predicate Function
+- return true
+
+Closure
+- use outer function variable at inner function
+
+Memonization 
+- cache
