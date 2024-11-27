@@ -1,0 +1,26 @@
+<html>
+  <script>
+    let students = [
+      {
+        name: 'Wunna',
+        age: 26,
+        gender: 'Male'
+      },
+
+      {
+        name: 'Nandar',
+        age: 22,
+        gender: 'Female'
+      },
+    ]
+
+    let result = [];
+
+    const isMale = student => student.gender === 'Male'
+    result = students.filter(isMale).filter((a,b) => {
+      return a.age < b.age ? a : b
+    })
+
+    console.log('result', result)
+  </script>
+</html>

@@ -15,6 +15,12 @@ fp principle -> pure function, referential transparency
 fp concept -> few data structure, many operator
 imperative concept -> control flow
 
+why use fp?
+- modular
+- understandable
+- testable
+- reuseable
+
 referential trapsparency -> same input same output -> အစားထိုးလို့ရ
 
 concunrrency problem -> state
@@ -33,8 +39,18 @@ Higher Order Function(HOF)
 why use HOF ?
 - 
 
-Predicate Function
+Predicate Function 
 - return true
+
+filter function accept Predicate function and is high order function
+filter function is similar if(imperative programming)
+
+map function 
+- transform
+
+reduce function
+- multiple elements to single element
+
 
 Closure
 - use outer function variable at inner function

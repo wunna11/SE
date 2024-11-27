@@ -19,5 +19,19 @@
     stack1.push("one");
     stack1.push("two");
     console.log("stack1", stack1.pop());
+
+    function uniqueId()  // outer function
+    {
+      let id = 0;
+      return function() // inner function
+      {
+        return id++
+      }
+    }
+
+    let unique = uniqueId()
+    console.log('unique', unique) // 0
+    console.log('unique', unique) // 1
+    console.log('unique', unique) // 2
   </script>
 </html>

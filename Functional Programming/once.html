@@ -23,7 +23,10 @@
 
     function once(fn) {
       let done = false;
-      return !done ? ((done = ture), fn()) : undefined;
+      return function () 
+      {
+        !done ? ((done = true), fn()) : undefined;
+      }
       // return function () {
       //   if (!done) {
       //     fn();
