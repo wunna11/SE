@@ -1,0 +1,29 @@
+<html>
+  <script>
+
+    /*
+      1:2
+      2:5
+      3:3
+      4:1
+    */
+
+    let arr = [2,2,1,1,2,4,2,3,2,3,3]
+    let group = {}
+
+    for (const item of arr) {
+      if(group[item]) {
+        group[item]++
+      } else {
+        group[item] = 1
+      }
+    }
+
+    let groupArr = Object.entries(group)
+    console.log('groupArr', groupArr)
+    groupArr.sort((a,b) => b[1] - a[1])
+    console.log('update group Arr', groupArr`)
+    let mostFrequent = groupArr.map(arr => arr[0])
+    console.log('group', mostFrequent)
+  </script>
+</html>

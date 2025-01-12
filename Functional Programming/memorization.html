@@ -27,7 +27,7 @@
         return result;
     }
 
-    function memoize(fn) {
+    function memonize(fn) {
       let cache = {};
 
       return function(n) {
@@ -38,7 +38,7 @@
       }
     }
 
-    let result = memoize(factorial);
+    let result = memonize(factorial);
     let fact = result(4);
     console.log('factorial', fact)
   </script>

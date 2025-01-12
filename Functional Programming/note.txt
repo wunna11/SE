@@ -6,6 +6,9 @@ side effect
 pure function
 - same input , same output
 
+pure function power
+- time travel debugging
+
 fp
 function -> map
 immutable
@@ -57,3 +60,21 @@ Closure
 
 Memonization 
 - cache
+
+why memonize ?
+- pure function
+
+Immutable power
+- not share global state , so good concurrency
+
+method1() + method2() + method3()
+Order of execution
+- imperative(important)
+- fp(all methods run parallel , so good efficient)
+
+commutative property
+- 1 + 2 + 3
+- (1+2) + 3
+- 1 + (2 + 3)
+
+

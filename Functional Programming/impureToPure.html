@@ -1,0 +1,15 @@
+<html>
+  <script>
+    function log(message)  // Impure function
+    {
+      console.log('message', message)
+    }
+
+    function logFn(log, message) // pure function
+    {
+      log('message', message)
+    }
+
+    logFn(console.log, 'Hi')
+  </script>
+</html>

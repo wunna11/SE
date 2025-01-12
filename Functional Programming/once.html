@@ -23,9 +23,9 @@
 
     function once(fn) {
       let done = false;
-      return function () 
+      return function (...args) 
       {
-        !done ? ((done = true), fn()) : undefined;
+        !done ? ((done = true), fn(...args)) : undefined;
       }
       // return function () {
       //   if (!done) {
@@ -39,7 +39,7 @@
     payment = once(payment);
     console.log(once(payment));
 
-    payment();
-    payment();
+    payment('order-1');
+    payment('order-1');
   </script>
 </html>
